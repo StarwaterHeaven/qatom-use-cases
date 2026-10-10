@@ -1,0 +1,1 @@
+{ "name": "mcp-app-minimal", "private": true, "type": "module", "scripts": { "test": "node test/run.mjs", "deploy": "wrangler deploy" } }
