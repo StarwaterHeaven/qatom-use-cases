@@ -27,7 +27,7 @@ Economics: winner 90% of the pot, draw 45% each, the league keeps 10%; an unjoin
 3. **Paid routes guarded** (secret path; add Qatom's `Authorization` header). League tier pinned in the stored endpoint (`?entry=10`), never a buyer input.
 4. **Who paid?** Each paid item has a commodity hash. `GET /v4/commodity/{hash}/transactions` lists its payments; match the entry by amount and time to find the paying twin, and record it as the payout address (or use `payout_twin_url` if the player gave one).
 5. **Pay out** with `POST /v4/transfer` (`address` = twin URL or email, `amount`). Transfers spend from the account's **primary** twin, while entries land on the items' provider twins.
-6. **Move the money to where payouts come from:** set Qatom **auto-distributions** from the create and join twins to the primary, a few times a day (Console). See the Console skill.
+6. **Move the money to where payouts come from:** a **standing distribution** on the create and join twins, 100% to the primary (Console → Configuration → Distributions). For many winners at once, one distribution can pay up to 200 recipients. See the Console skill.
 7. **Queue and retry** payouts that can't be paid yet; show `payouts[].status` in the free view; email the team when it lands.
 8. **Fairness you can check:** colours from `sha256("<match_id>:<creator>:<joiner>")`, published with the match.
 9. **In-chat board** via an MCP App on a second, free MCP server (see [interactive MCP Apps](../solutions/interactive-mcp-apps.md)).

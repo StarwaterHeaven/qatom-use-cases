@@ -7,7 +7,7 @@ Use cases where the customer is not a single seller listing an item.
 A business buys from the catalog at volume through its own agent wallets and spend limits. Live customer: **Gracia AI**.
 
 - Setup: connect the master MCP; fund one agent twin per agent or per workload; each twin's balance is that agent's hard ceiling.
-- Several agents or teams sharing one funded wallet, or one agent drawing on several wallets, is set up in the Console (twin groups). See the Console skill: https://github.com/StarwaterHeaven/qatom-console-skill .
+- High volume: **Payment Multiplex** (Console). A master twin hands each purchase to one of n payer twins with capacity; daily top-ups from the master keep payers funded, so the buyer manages one endpoint and one budget. See the Console skill: https://github.com/StarwaterHeaven/qatom-console-skill .
 - Approval: purchases may ask a human to approve before they settle (for example above a spend threshold). Where that threshold is set is covered in the Console skill.
 
 ## Orchestration platform (embed Qatom)
