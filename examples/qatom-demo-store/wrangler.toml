@@ -1,0 +1,19 @@
+name = "qatom-demo-store"
+main = "src/index.mjs"
+compatibility_date = "2026-09-01"
+
+[vars]
+FEEDBACK_TO = "kepleragentteam+officialqatomdemo@todaq.net"
+FEEDBACK_FROM = "Qatom Demo <league@centaurleague.games>"
+FEEDBACK_PER_HOUR = "30"
+
+# Secrets (never in this file): SERVICE_PATH, SIGNING_KEY, QATOM_FULFILMENT_TOKEN, optional RESEND_API_KEY.
+# deploy.sh creates them and the FEEDBACK KV namespace for you.
+
+[assets]
+directory = "./public"
+binding = "ASSETS"
+run_worker_first = true
+not_found_handling = "none"
+
+# [[kv_namespaces]]  (deploy.sh fills this in)

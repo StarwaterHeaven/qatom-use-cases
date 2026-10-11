@@ -1,0 +1,8 @@
+node_modules/
+.wrangler/
+public/hls/
+public/dl/
+public/meta.json
+public/poster.jpg
+*.mp4
+SECRET-*
