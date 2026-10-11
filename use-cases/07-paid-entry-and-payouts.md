@@ -33,7 +33,7 @@ Economics: winner 90% of the pot, draw 45% each, the league keeps 10%; an unjoin
 9. **In-chat board** via an MCP App on a second, free MCP server (see [interactive MCP Apps](../solutions/interactive-mcp-apps.md)).
 10. **`llms.txt` generated from the live catalog** every 10 minutes.
 
-Server-side calls (transactions, transfers) need API client credentials for the account (token from `/v4/account/oauth/token`); ask the Qatom team.
+Server-side calls (transactions, transfers) need the account's client credentials, from Dashboard → Settings → Secrets (token from `/v4/account/oauth/token`). Keep the secret on the server.
 
 Deep dive: https://github.com/StarwaterHeaven/centaur-league/blob/main/docs/how-its-built.md
 

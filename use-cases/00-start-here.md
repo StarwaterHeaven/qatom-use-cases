@@ -11,7 +11,7 @@ Do these once. Every recipe in this repo assumes them.
 
 ## As a seller
 
-1. **Open the dashboard** and set your **seller display name** first (items without one show the seller as "None").
+1. **Open the Dashboard** at https://dashboard.qatom.ai and set your **business name** first (Account); it is the seller name buyers see. Plans: Builder (free), Pro ($20/mo), Max ($300/mo).
 2. **Install the seller guide** in your agent and let it walk you through first use case, endpoint, schema, listing, `llms.txt` and the launch report:
    ```bash
    npx skills add StarwaterHeaven/qatom-seller-guide --skill qatom-seller-guide
