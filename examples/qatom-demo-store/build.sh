@@ -18,22 +18,23 @@ encode () {
   ffmpeg -hide_banner -loglevel error -stats -y -i "$SRC" -map 0:v:0 -map 0:a? \
     -c:v libx264 -preset veryfast -profile:v high -level 4.1 -pix_fmt yuv420p \
     -vf "scale=-2:$2:flags=lanczos" -b:v "$3" -maxrate "$4" -bufsize "$5" \
-    -g 48 -keyint_min 48 -sc_threshold 0 -c:a aac -b:a 128k -ac 2 \
+    -g 48 -keyint_min 48 -sc_threshold 0 -c:a aac -b:a 96k -ac 2 \
     -f hls -hls_time 4 -hls_playlist_type vod -hls_flags independent_segments \
     -hls_segment_filename "$HLS/$1/seg_%03d.ts" "$HLS/$1/index.m3u8"
 }
-encode 1080p 1080 5000k 5350k 7500k
-encode 720p   720 2800k 2996k 4200k
-encode 480p   480 1400k 1498k 2100k
+# The NASA source averages under 1 Mbps, so a higher ladder only adds upload time and bytes, not quality.
+encode 1080p 1080 1200k 1300k 1800k
+encode 720p   720  800k  860k 1200k
+encode 480p   480  450k  480k  700k
 cat > "$HLS/master.m3u8" <<'M3U'
 #EXTM3U
 #EXT-X-VERSION:3
 #EXT-X-INDEPENDENT-SEGMENTS
-#EXT-X-STREAM-INF:BANDWIDTH=5500000,AVERAGE-BANDWIDTH=5000000,RESOLUTION=1920x1080
+#EXT-X-STREAM-INF:BANDWIDTH=1450000,AVERAGE-BANDWIDTH=1300000,RESOLUTION=1920x1080
 1080p/index.m3u8
-#EXT-X-STREAM-INF:BANDWIDTH=3000000,AVERAGE-BANDWIDTH=2800000,RESOLUTION=1280x720
+#EXT-X-STREAM-INF:BANDWIDTH=1000000,AVERAGE-BANDWIDTH=900000,RESOLUTION=1280x720
 720p/index.m3u8
-#EXT-X-STREAM-INF:BANDWIDTH=1500000,AVERAGE-BANDWIDTH=1400000,RESOLUTION=854x480
+#EXT-X-STREAM-INF:BANDWIDTH=600000,AVERAGE-BANDWIDTH=550000,RESOLUTION=854x480
 480p/index.m3u8
 M3U
 DUR=$(ffprobe -v error -show_entries format=duration -of default=nw=1:nk=1 "$SRC" | cut -d. -f1)
@@ -56,4 +57,4 @@ cat > public/meta.json <<JSON
 { "video": { "title": "Space Station fisheye fly-through (NASA, 4K)", "duration_seconds": $DUR },
   "seller_guide": { "version": "$VER", "file": "$ZIP", "bytes": $BYTES, "sha256": "$SHA", "files": [$FILES] } }
 JSON
-echo "==> done: $(find "$HLS" -type f | wc -l | tr -d ' ') stream files, $ZIP ($BYTES bytes), video ${DUR}s"
+echo "==> done: $(find "$HLS" -type f | wc -l | tr -d ' ') stream files ($(du -sh "$HLS" | cut -f1)), $ZIP ($BYTES bytes), video ${DUR}s"

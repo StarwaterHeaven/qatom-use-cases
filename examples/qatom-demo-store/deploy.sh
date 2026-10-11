@@ -21,7 +21,9 @@ if ! grep -q '^\[\[kv_namespaces\]\]' wrangler.toml; then
   log "KV FEEDBACK created"
 fi
 
-URL=$($W deploy 2>&1 | tee /tmp/wk-demo-deploy.log | grep -oE 'https://[a-z0-9.-]+\.workers\.dev' | head -1)
+echo "==> deploying $(du -sh public | cut -f1) of assets (first upload can take a while on a slow uplink)"
+$W deploy 2>&1 | tee /tmp/wk-demo-deploy.log
+URL=$(grep -oE 'https://[a-z0-9.-]+\.workers\.dev' /tmp/wk-demo-deploy.log | head -1)
 [ -n "$URL" ] || { cat /tmp/wk-demo-deploy.log; exit 1; }
 log "deployed: $URL"
 
