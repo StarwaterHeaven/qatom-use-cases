@@ -1,11 +1,17 @@
 name = "qatom-demo-store"
 main = "src/index.mjs"
 compatibility_date = "2026-09-01"
+workers_dev = true
+preview_urls = false
 
 [vars]
 FEEDBACK_TO = "kepleragentteam+officialqatomdemo@todaq.net"
 FEEDBACK_FROM = "Qatom Demo <league@centaurleague.games>"
 FEEDBACK_PER_HOUR = "30"
+# Catalog item ids, shown in /llms.txt (set after the items exist; Qatom Demo account, 11 Oct 2026)
+ITEM_ID_FEEDBACK = "188"
+ITEM_ID_VIDEO = "191"
+ITEM_ID_SKILL = "189"
 
 # Secrets (never in this file): SERVICE_PATH, SIGNING_KEY, QATOM_FULFILMENT_TOKEN, optional RESEND_API_KEY.
 # deploy.sh creates them and the FEEDBACK KV namespace for you.
