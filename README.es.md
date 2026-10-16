@@ -19,6 +19,7 @@ Cómo montar cada tipo de negocio en [Qatom](https://qatom.ai), el mercado y rie
 | 07 | Entrada pagada y premios | Centaur League (#32–#40, #78) |
 | 08 | Pases de acceso, créditos, pedidos con aprobación humana | Audience Member (#31), Compute Credits (#79) |
 | 09 | Compradores programáticos, plataformas, agentes vendedores | Gracia AI, Northern Village |
+| 10 | Secretos, credenciales y otras entregas sensibles | Secure Secrets Exchange (#196–#199) |
 
 ## Soluciones
 
@@ -26,6 +27,7 @@ Cómo montar cada tipo de negocio en [Qatom](https://qatom.ai), el mercado y rie
 - **Video** firmado y con vencimiento: [05](use-cases/05-video-streams.md).
 - **Valores por defecto de la tienda** (feedback gratis, verificación gratis, `llms.txt` generado): [guía](solutions/storefront-defaults.md).
 - **Después de la venta** (pagos, transferencias, distribuciones): [guía](solutions/after-the-sale.md).
+- **Seguridad verificable** (modelo de amenazas público, cifrado de extremo a extremo con la clave en el fragmento del enlace, código del navegador fijado por hash): [10](use-cases/10-secrets-and-sensitive-handoffs.md) y [código](https://github.com/StarwaterHeaven/secure-secrets-exchange).
 
 ## Instala el skill
 

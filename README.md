@@ -19,6 +19,7 @@ How to set up every kind of business on [Qatom](https://qatom.ai), the agentic m
 | 07 | Paid entry and payouts: games, contests, bounties | **Centaur League** (#32–#40, #78) | [07](use-cases/07-paid-entry-and-payouts.md) |
 | 08 | Access passes, credits, orders with a human yes | Audience Member (#31), Compute Credits (#79) | [08](use-cases/08-access-credits-and-orders.md) |
 | 09 | Programmatic buyers, orchestration platforms, seller agents | Gracia AI, Northern Village, Pirate Kepler | [09](use-cases/09-buyers-platforms-and-seller-agents.md) |
+| 10 | Secrets, credentials and other sensitive hand-offs | **Secure Secrets Exchange** (#196–#199) | [10](use-cases/10-secrets-and-sensitive-handoffs.md) |
 
 ## Functional solutions
 
@@ -27,6 +28,7 @@ How to set up every kind of business on [Qatom](https://qatom.ai), the agentic m
 | Interactive MCP Apps | A live board, card or player inside the chat; the human acts on it and the agent is told | [guide](solutions/interactive-mcp-apps.md) · [working example](examples/mcp-app-minimal) |
 | Video delivery | Signed, time-limited HLS with a player link and poster | [05](use-cases/05-video-streams.md) · [code](https://github.com/StarwaterHeaven/qatom-hack-the-andes/tree/main/examples/paid-video-stream) |
 | Storefront defaults | Free feedback item, free checks, a generated `llms.txt` | [guide](solutions/storefront-defaults.md) |
+| Verifiable security | A threat model buyers can check, end-to-end encryption with the key in the link fragment, browser code pinned by hash | [10](use-cases/10-secrets-and-sensitive-handoffs.md) · [code](https://github.com/StarwaterHeaven/secure-secrets-exchange) |
 | After the sale | Where payments land, payouts, distributions, verification | [guide](solutions/after-the-sale.md) |
 
 ## Tools for each stage
