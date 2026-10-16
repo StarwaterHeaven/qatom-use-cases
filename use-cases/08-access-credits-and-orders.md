@@ -7,6 +7,7 @@ Three commerce patterns that carry state beyond one call.
 One payment grants a role or a period of access; the endpoint issues a token or adds the buyer to a list.
 
 - Live: **Audience Member** (#31, Truce Media, 5.000).
+- Live: **Harcourt NAV Query Pass** (#192, Harcourt Capital Services, 5.000): six hours of unlimited NAV Query on one company, in the browser. The paid call returns a one-click link that unlocks that company until `expires_at`; the link carries the access, so the description tells the agent to give it only to the person it was bought for. It is priced against the per-call item (#24): a handful of what-ifs would cost more than the pass, and the description says so.
 - Recipe: the paid call returns `access_token`, `expires_at` and what it unlocks; a free `status` item checks a token; the protected service checks tokens on every request. Tie the pass to the paying twin (from the item's commodity transactions) if it must not be shared.
 
 ## Credits and resale

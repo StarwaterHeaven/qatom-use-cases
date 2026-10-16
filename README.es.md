@@ -10,14 +10,14 @@ Cómo montar cada tipo de negocio en [Qatom](https://qatom.ai), el mercado y rie
 
 | # | Caso | Ejemplo en vivo (id) |
 |---|---|---|
-| 01 | Pago por llamada: un cálculo | Harcourt Mining NAV Query (#24) |
+| 01 | Pago por llamada: un cálculo | Harcourt Mining NAV Query (#24; con #192 y #193 como escalera de precios) |
 | 02 | Estado en vivo de un registro | Mexican Freight Agentic Tracking and Tracing (#181–#183) |
 | 03 | Vender una API que ya tienes | Weather (#80) |
 | 04 | Convertir un repo de GitHub en servicio pagado | Plantilla Worker |
 | 05 | Video: pago por vista o renta | ISS Earth Observations Video Demo (#27) |
-| 06 | Documentos y reportes | Patrón |
-| 07 | Entrada pagada y premios | Centaur League (#32–#40, #78) |
-| 08 | Pases de acceso, créditos, pedidos con aprobación humana | Audience Member (#31), Compute Credits (#79) |
+| 06 | Documentos y reportes | Harcourt NAV Report (#193) |
+| 07 | Entrada pagada y premios | Centaur League (#32–#36, #38–#40, #78) |
+| 08 | Pases de acceso, créditos, pedidos con aprobación humana | Harcourt NAV Query Pass (#192), Audience Member (#31), Compute Credits (#79) |
 | 09 | Compradores programáticos, plataformas, agentes vendedores | Gracia AI, Northern Village |
 | 10 | Secretos, credenciales y otras entregas sensibles | Secure Secrets Exchange (#196–#199) |
 

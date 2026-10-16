@@ -10,14 +10,14 @@ How to set up every kind of business on [Qatom](https://qatom.ai), the agentic m
 
 | # | Use case | Live example (catalog id) | Recipe |
 |---|---|---|---|
-| 01 | Pay per call: a calculation or model output | **Harcourt Mining NAV Query** (#24), BTC Options Market Read (#22), spreadsheet formulas (#41–#77) | [01](use-cases/01-pay-per-call-calculation.md) |
+| 01 | Pay per call: a calculation or model output | **Harcourt Mining NAV Query** (#24, with #192 and #193 as a price ladder), BTC Options Market Read (#22), spreadsheet formulas (#41–#77) | [01](use-cases/01-pay-per-call-calculation.md) |
 | 02 | Live status or record lookup | Mexican Freight Agentic Tracking and Tracing (#181–#183) | [02](use-cases/02-live-status-lookup.md) |
 | 03 | Sell an API you already run, or hold a key for | Weather (#80), npm Package Freshness (#26) | [03](use-cases/03-wrap-an-existing-api.md) |
 | 04 | Turn a GitHub repo or CLI into a paid service | Worker template (repo card) | [04](use-cases/04-repo-to-service.md) |
 | 05 | Video streams: pay per view or rental | ISS Earth Observations Video Demo (#27) | [05](use-cases/05-video-streams.md) |
-| 06 | Documents and reports | Pattern (worked example) | [06](use-cases/06-documents-and-reports.md) |
-| 07 | Paid entry and payouts: games, contests, bounties | **Centaur League** (#32–#40, #78) | [07](use-cases/07-paid-entry-and-payouts.md) |
-| 08 | Access passes, credits, orders with a human yes | Audience Member (#31), Compute Credits (#79) | [08](use-cases/08-access-credits-and-orders.md) |
+| 06 | Documents and reports | **Harcourt NAV Report** (#193) | [06](use-cases/06-documents-and-reports.md) |
+| 07 | Paid entry and payouts: games, contests, bounties | **Centaur League** (#32–#36, #38–#40, #78) | [07](use-cases/07-paid-entry-and-payouts.md) |
+| 08 | Access passes, credits, orders with a human yes | Harcourt NAV Query Pass (#192), Audience Member (#31), Compute Credits (#79) | [08](use-cases/08-access-credits-and-orders.md) |
 | 09 | Programmatic buyers, orchestration platforms, seller agents | Gracia AI, Northern Village, Pirate Kepler | [09](use-cases/09-buyers-platforms-and-seller-agents.md) |
 | 10 | Secrets, credentials and other sensitive hand-offs | **Secure Secrets Exchange** (#196–#199) | [10](use-cases/10-secrets-and-sensitive-handoffs.md) |
 
@@ -41,7 +41,7 @@ How to set up every kind of business on [Qatom](https://qatom.ai), the agentic m
 | Run the store after launch | [Qatom Console skill](https://github.com/StarwaterHeaven/qatom-console-skill) |
 | Play or build a game | [Centaur League kit](https://github.com/StarwaterHeaven/centaur-league) |
 
-Catalog ids and prices are from the public catalog on 10 October 2026; `catalog_search` on the master MCP has the current list.
+Catalog ids and prices are from the public catalog on 15 October 2026; `catalog_search` on the master MCP has the current list.
 
 ## Add your use case
 

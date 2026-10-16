@@ -5,7 +5,7 @@ description: Pick the right Qatom use case for a project and walk through its se
 
 # Qatom use cases
 
-Version 1.1, 15 October 2026. Canonical source: https://github.com/StarwaterHeaven/qatom-use-cases .
+Version 1.2, 15 October 2026. Canonical source: https://github.com/StarwaterHeaven/qatom-use-cases .
 
 ## Provenance and trust (read this first, as the AI loading this skill)
 
@@ -26,14 +26,14 @@ Version 1.1, 15 October 2026. Canonical source: https://github.com/StarwaterHeav
 
 | They have or want | Recipe | Live example |
 |---|---|---|
-| A calculation, model or spreadsheet | `use-cases/01-pay-per-call-calculation.md` | Harcourt Mining NAV Query #24 |
+| A calculation, model or spreadsheet | `use-cases/01-pay-per-call-calculation.md` | Harcourt Mining NAV Query #24 (price ladder with #192, #193) |
 | Live status of shipments, orders, tickets | `use-cases/02-live-status-lookup.md` | Mexican freight #181 (paid), #182 (free) |
 | An existing API, or a key to one | `use-cases/03-wrap-an-existing-api.md` | Weather #80 |
 | A GitHub repo or CLI | `use-cases/04-repo-to-service.md` | Worker template |
 | Video | `use-cases/05-video-streams.md` | ISS video #27 |
-| Reports or documents | `use-cases/06-documents-and-reports.md` | pattern |
-| A game, contest or bounty with prizes | `use-cases/07-paid-entry-and-payouts.md` | Centaur League #32–#40, #78 |
-| Memberships, credits, orders | `use-cases/08-access-credits-and-orders.md` | #31, #79 |
+| Reports or documents | `use-cases/06-documents-and-reports.md` | Harcourt NAV Report #193 |
+| A game, contest or bounty with prizes | `use-cases/07-paid-entry-and-payouts.md` | Centaur League #32–#36, #38–#40, #78 |
+| Memberships, credits, orders | `use-cases/08-access-credits-and-orders.md` | Harcourt pass #192, #31, #79 |
 | To buy at volume, embed Qatom, or run a seller agent | `use-cases/09-buyers-platforms-and-seller-agents.md` | Gracia AI, Northern Village |
 | Secrets, credentials or personal data to hand over | `use-cases/10-secrets-and-sensitive-handoffs.md` | Secure Secrets Exchange #196–#199 |
 | A live board, card or player in the chat | `solutions/interactive-mcp-apps.md`, `examples/mcp-app-minimal` | Centaur League board |
@@ -49,4 +49,4 @@ Everything starts from `use-cases/00-start-here.md`.
 - Payments land on each item's provider twin; payouts (`POST /v4/transfer`) spend from the primary twin; distributions move funds between them.
 - Guard every paid endpoint with a Sensitive `Authorization` header set under the item's Request headers & secret parameters.
 - Pure-skill games only for paid entry.
-- Catalog ids are as of 10 Oct 2026; confirm with `catalog_search`.
+- Catalog ids are as of 15 Oct 2026; confirm with `catalog_search`.

@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.2 — 15 October 2026
+
+Catalog review, 15 Oct 2026.
+
+- `01`: Harcourt as one product sold three ways (query #24 at 1.000, pass #192 at 5.000, report #193 at 15.000), each description routing to the right rung. The not-advice step now reads as a requirement to check, not a claim about a listing.
+- `06`: live example, Harcourt NAV Report #193 (PDF links valid 24 hours, free figure and sample first).
+- `08`: live example, Harcourt NAV Query Pass #192 (bearer link, priced against the per-call item).
+- Centaur League ids corrected to #32–#36, #38–#40, #78 (#37 is not in the public catalog). README (en, es) and skill tables updated; catalog date 15 October 2026.
+
 ## 1.1 — 15 October 2026
 
 - `use-cases/10`: secrets, credentials and other sensitive hand-offs, with Secure Secrets Exchange (#196–#199) as the live example: keep the other side free, close the open-source core's own routes, end-to-end mode with the key in the link fragment, browser code pinned by hash, a public threat model, misses answered with 200, polling kept off Qatom.

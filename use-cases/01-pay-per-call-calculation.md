@@ -19,7 +19,17 @@
 5. **Self-describing answers.** `answer_type`, `defaulted_inputs` with their source, units and currency every time, `out_of_range`.
 6. **Actionable errors.** Unknown ticker: the coverage table. Unsupported input: the accepted inputs. Ambiguous symbol: candidates, never a guess.
 7. **`llms.txt` generated** from the same file the endpoint reads.
-8. **Not-advice line** in the description and every response (finance).
+8. **Not-advice line** belongs in the description and in every response for finance items. Check yours before launch: it is the line most often left out of the listing.
+
+### One product, three ways to buy (live since 13 Oct 2026)
+
+| Item | id | Price | For |
+|---|---|---|---|
+| Harcourt Mining NAV Query | 24 | 1.000 | An agent that needs one figure or one scenario |
+| Harcourt NAV Query Pass | 192 | 5.000 | A person who wants six hours of sliders on one company in the browser ([08](08-access-credits-and-orders.md)) |
+| Harcourt NAV Report | 193 | 15.000 | The full research PDF, for due diligence ([06](06-documents-and-reports.md)) |
+
+Each description says who it is for and points to the cheaper option ("for a single figure, use harcourt_mining_nav_query"; "a handful of what-ifs through the query would cost more than this pass"). All three send the agent to the same free published figure first, and say plainly that an unknown ticker is still charged. A price ladder that routes agents to the right rung earns more trust than three items that look alike.
 
 Full write-up: [seller guide, worked examples](https://github.com/StarwaterHeaven/qatom-seller-guide/blob/main/skills/qatom-seller-guide/references/worked-examples.md).
 

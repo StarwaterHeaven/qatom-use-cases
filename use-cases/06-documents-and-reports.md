@@ -2,6 +2,15 @@
 
 **What it is:** sell a short-lived download link to a report, not the file itself. A free metadata call lets an agent decide before it pays.
 
+## Live example
+
+**Harcourt NAV Report** (#193, Harcourt Capital Services, 15.000): the full research report on one listed miner, as a PDF.
+
+- Input: `ticker` only, any listing symbol; coverage in `llms.txt`.
+- Returns `view_url` and `download_url`, valid 24 hours and for that company only. The agent can read the PDF itself or pass the link to its human.
+- Free before paying: the published figure at `reports.harcourtvaluations.ai/nav-query/{ticker}` (it also confirms coverage) and a free sample report.
+- The description routes buyers who only need the number to the 1.000 query (#24), and warns that an unknown ticker is still charged.
+
 ## Recipe
 
 | Step | Do |
