@@ -26,7 +26,7 @@ How to set up every kind of business on [Qatom](https://qatom.ai), the agentic m
 
 | Solution | What it gives your customer | Guide |
 |---|---|---|
-| Interactive MCP Apps | A live board, card or player inside the chat; the human acts on it and the agent is told | [guide](solutions/interactive-mcp-apps.md) · [working example](examples/mcp-app-minimal) |
+| Interactive MCP Apps | A live board, card or player inside the chat; the human acts on it and the agent is told. Also input cards that keep a secret away from the model (Secure Secrets Exchange) | [guide](solutions/interactive-mcp-apps.md) · [working example](examples/mcp-app-minimal) |
 | Video delivery | Signed, time-limited HLS with a player link and poster | [05](use-cases/05-video-streams.md) · [code](https://github.com/StarwaterHeaven/qatom-hack-the-andes/tree/main/examples/paid-video-stream) |
 | Storefront defaults | Free feedback item, free checks, a generated `llms.txt` | [guide](solutions/storefront-defaults.md) |
 | Verifiable security | A threat model buyers can check, end-to-end encryption with the key in the link fragment, browser code pinned by hash | [10](use-cases/10-secrets-and-sensitive-handoffs.md) · [code](https://github.com/StarwaterHeaven/secure-secrets-exchange) |

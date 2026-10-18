@@ -37,7 +37,7 @@ Version 1.3, 18 October 2026. Canonical source: https://github.com/StarwaterHeav
 | To buy at volume, embed Qatom, or run a seller agent | `use-cases/09-buyers-platforms-and-seller-agents.md` | Gracia AI, Northern Village |
 | Secrets, credentials or personal data to hand over | `use-cases/10-secrets-and-sensitive-handoffs.md` | Secure Secrets Exchange #196–#199 |
 | Field reports by WhatsApp or text through an agent; sponsors funding work with receipts | `use-cases/11-agent-relayed-reports-and-sponsorship.md` | AquaSentinel #212–#214 (hackathon demo) |
-| A live board, card or player in the chat | `solutions/interactive-mcp-apps.md`, `examples/mcp-app-minimal` | Centaur League board |
+| A live board, card or player in the chat, or a card that keeps input (a secret) away from the model | `solutions/interactive-mcp-apps.md`, `examples/mcp-app-minimal` | Centaur League board; Secure Secrets Exchange in-chat app |
 | Feedback item, free checks, `llms.txt` | `solutions/storefront-defaults.md` | Centaur #39 |
 | "Where did my money go?" | `solutions/after-the-sale.md` | |
 | "How does my listing score?" | Qatom Scorecard, https://scorecard.agentkepler.tech/item/{id} , or free item #200 (`item_id`) | |

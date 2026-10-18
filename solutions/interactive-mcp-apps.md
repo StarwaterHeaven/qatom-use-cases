@@ -2,7 +2,10 @@
 
 An MCP App is a small HTML view that an MCP server attaches to a tool. Clients that support MCP Apps (Claude, ChatGPT, Goose, VS Code and others) render it inside the conversation, so the customer gets a live board, card, player or form instead of a wall of text, and the agent still sees everything as text. Clients that don't support it simply show the text. Nothing breaks.
 
-Live reference: **Centaur League**. `view_match` and `spectate` open a chess board in the chat; the human drags pieces, offers draws and resigns on it, and the agent is told each move so it can recommend the reply.
+Live references:
+
+- **Centaur League**. `view_match` and `spectate` open a chess board in the chat; the human drags pieces, offers draws and resigns on it, and the agent is told each move so it can recommend the reply.
+- **Secure Secrets Exchange in-chat app** (`https://sse-mcp.agentkepler.tech/mcp`, source in `mcp-app/` of [secure-secrets-exchange](https://github.com/StarwaterHeaven/secure-secrets-exchange)). A send card where the human types a secret that the model must never see, and an open card that reveals a link with a Copy button. See "Keeping input away from the model" below.
 
 ## Where it fits with Qatom (today)
 
@@ -13,7 +16,7 @@ Qatom's `agent_checkout` returns the seller's answer inside the receipt as text 
 | Qatom master MCP | `https://mcp.m.todaq.net/mcp` | Discovery, every paid item, every free catalog item, the wallet |
 | Your own free MCP server | `https://<your-domain>/mcp` | The same free tools again, with views attached (no sign-in, no money) |
 
-Centaur League runs exactly this: paid entry (create, join) only on Qatom; the board on `https://centaurleague.games/mcp`. Keep money on Qatom; keep the view server read-mostly and free.
+Centaur League runs exactly this: paid entry (create, join) only on Qatom; the board on `https://centaurleague.games/mcp`. So does Secure Secrets Exchange: create (#199) is bought on Qatom; the cards are on `https://sse-mcp.agentkepler.tech/mcp`. Keep money on Qatom; keep the view server read-mostly and free.
 
 When Qatom passes views through checkout, the second connection becomes optional. Design your view so it only needs the tool result, and it will move over unchanged.
 
@@ -39,6 +42,20 @@ Also: send `ui/notifications/size-changed` after each render; use `ui/open-link`
 - **Summaries for the model, full JSON for the view.** Strip helper fields the view doesn't need before sending `structuredContent`.
 - **Free only.** No purchase starts from inside a view. The human approves money in Qatom's own flow.
 
+## Keeping input away from the model (Secure Secrets Exchange)
+
+Centaur's view shows the model's world to the human. A view can also do the reverse: take something from the human that the model must not see, and hand the model only a safe form of it.
+
+- **The human types into the view, not the chat.** Tool descriptions and server `instructions` say "never ask the human to type or paste a secret into the chat; open the card".
+- **Transform in the view.** The send card makes the key and encrypts with WebCrypto; only ciphertext leaves the card.
+- **Hand the model a ready instruction with `ui/message`.** The card sends a user-role message: "buy item 199 with this payload, then call `sse_link_ready` with ref X". If the host refuses `ui/message`, the card shows the same text with a Copy button for the human to send.
+- **Return path by ref.** The model reports the paid result to a free tool (`sse_link_ready(ref, share_url_base, ...)`), the server keeps it briefly (KV, 2 hours), and the view polls a free tool (`sse_get_link(ref)`) through `tools/call`. The view then adds its own part (the `#key`) locally.
+- **Declare the one domain you need.** The open card fetches ciphertext from the service, so the resource declares `csp.connectDomains: ['https://secrets.agentkepler.tech']`, and the service sends `Access-Control-Allow-Origin: *` on the two credential-free routes the card calls.
+- **Copy buttons with a fallback.** `navigator.clipboard` can be blocked in a sandboxed iframe; fall back to selecting the text and `execCommand('copy')`, then "press Ctrl/Cmd+C".
+- **Be honest about trust.** The host app runs the view and could read the input; the card protects against the model, transcripts and the transfer path, not the app vendor. Say so on `/security`.
+- **Test in a secure context.** WebCrypto needs HTTPS: a test host page served from `about:blank` fails with "no WebCrypto". Serve the fake host from an `https://` route in the test browser.
+- **ASCII in the view.** Characters like `…` can garble when a host embeds the HTML with a different charset. Keep the view ASCII-only.
+
 ## Good fits
 
 | Use case | View |
@@ -48,3 +65,4 @@ Also: send `ui/notifications/size-changed` after each render; use `ui/open-link`
 | Video and media | A player for the signed stream URL the paid item returned |
 | Quotes and calculations | A card with inputs the human can adjust and re-run (free re-runs only for free items) |
 | Reports | A preview page with title, abstract and table of contents before the paid download |
+| Secrets and personal data | An input card that encrypts or redacts before the model sees anything, and a reveal card with Copy |
