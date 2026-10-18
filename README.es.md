@@ -27,7 +27,7 @@ Cómo montar cada tipo de negocio en [Qatom](https://qatom.ai), el mercado y rie
 - **MCP Apps interactivas** (un tablero o tarjeta en vivo dentro del chat): [guía](solutions/interactive-mcp-apps.md) y [ejemplo](examples/mcp-app-minimal).
 - **Video** firmado y con vencimiento: [05](use-cases/05-video-streams.md).
 - **Valores por defecto de la tienda** (feedback gratis, verificación gratis, `llms.txt` generado): [guía](solutions/storefront-defaults.md).
-- **Puntaje de tu ítem**: [puntajes públicos del catálogo](https://starwaterheaven.github.io/Qatom-Review-and-Rating-System/), o el ítem gratuito #200 "Qatom Catalog Ratings: free lookup" (entrada `item_id`).
+- **Puntaje de tu ítem**: [Qatom Scorecard](https://scorecard.agentkepler.tech/) (`/item/{id}` para un ítem; beta), o el ítem gratuito #200 (entrada `item_id`). ¿Crees que una verificación es injusta? [Propón un cambio](https://github.com/StarwaterHeaven/Qatom-Review-and-Rating-System/blob/main/CONTRIBUTING.es.md).
 - **Después de la venta** (pagos, transferencias, distribuciones): [guía](solutions/after-the-sale.md).
 - **Seguridad verificable** (modelo de amenazas público, cifrado de extremo a extremo con la clave en el fragmento del enlace, código del navegador fijado por hash): [10](use-cases/10-secrets-and-sensitive-handoffs.md) y [código](https://github.com/StarwaterHeaven/secure-secrets-exchange).
 

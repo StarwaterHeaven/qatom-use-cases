@@ -40,7 +40,7 @@ Version 1.3, 18 October 2026. Canonical source: https://github.com/StarwaterHeav
 | A live board, card or player in the chat | `solutions/interactive-mcp-apps.md`, `examples/mcp-app-minimal` | Centaur League board |
 | Feedback item, free checks, `llms.txt` | `solutions/storefront-defaults.md` | Centaur #39 |
 | "Where did my money go?" | `solutions/after-the-sale.md` | |
-| "How does my listing score?" | Public page https://starwaterheaven.github.io/Qatom-Review-and-Rating-System/ , or free item #200 (`item_id`) | |
+| "How does my listing score?" | Qatom Scorecard, https://scorecard.agentkepler.tech/item/{id} , or free item #200 (`item_id`) | |
 
 Everything starts from `use-cases/00-start-here.md`.
 

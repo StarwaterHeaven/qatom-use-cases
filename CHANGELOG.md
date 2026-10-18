@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.1 — 18 October 2026
+
+- Score links now point at Qatom Scorecard (`scorecard.agentkepler.tech/item/{id}`, beta) and its CONTRIBUTING guide (en, es).
+
 ## 1.3 — 18 October 2026
 
 From the AquaSentinel build at the Water Care AI Hackathon (17 Oct 2026).

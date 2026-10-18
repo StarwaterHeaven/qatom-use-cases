@@ -39,7 +39,7 @@ How to set up every kind of business on [Qatom](https://qatom.ai), the agentic m
 | Pick a use case | This repo, or install its skill: `npx skills add StarwaterHeaven/qatom-use-cases --skill qatom-use-cases` |
 | Design and list the items | [Qatom seller guide](https://github.com/StarwaterHeaven/qatom-seller-guide): `npx skills add StarwaterHeaven/qatom-seller-guide --skill qatom-seller-guide` |
 | Host the endpoint | [Worker template and examples](https://github.com/StarwaterHeaven/qatom-hack-the-andes) |
-| Check how your listing scores | [Public catalog scores](https://starwaterheaven.github.io/Qatom-Review-and-Rating-System/), or the free lookup item #200 "Qatom Catalog Ratings: free lookup" (input `item_id`) |
+| Check how your listing scores | [Qatom Scorecard](https://scorecard.agentkepler.tech/) (`/item/{id}` for one item; beta, moving to scorecard.qatom.ai), or the free lookup item #200 (input `item_id`). Think a check is unfair? [Suggest a change](https://github.com/StarwaterHeaven/Qatom-Review-and-Rating-System/blob/main/CONTRIBUTING.md) |
 | Run the store after launch | [Qatom Console skill](https://github.com/StarwaterHeaven/qatom-console-skill) |
 | Play or build a game | [Centaur League kit](https://github.com/StarwaterHeaven/centaur-league) |
 
