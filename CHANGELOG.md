@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.3 — 18 October 2026
+
+From the AquaSentinel build at the Water Care AI Hackathon (17 Oct 2026).
+
+- `use-cases/11`: reports through a messaging agent, and sponsorship with a money trail. Live example AquaSentinel (#212–#214): the agent relays loose reports; the endpoint asks back with `need`, `candidates` and a ready `reply` instead of guessing; one handler behind a free webhook and a paid item; a free preview that stores nothing; masked public feed; human-approved actions; live approvals planned before a demo; demo items retired after the event.
+- README (en, es) and skill: row 11, and where to check a listing's score (public catalog scores page and free lookup item #200), per Pirate Kepler's 16 Oct request. Catalog date 18 October 2026.
+
 ## 1.2 — 15 October 2026
 
 Catalog review, 15 Oct 2026.
