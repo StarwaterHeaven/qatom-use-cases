@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.4 — 18 October 2026
+
+- `solutions/interactive-mcp-apps`: second live reference, the Secure Secrets Exchange in-chat app (`sse-mcp.agentkepler.tech/mcp`), and a new section "Keeping input away from the model": the human types into the view, the view encrypts, `ui/message` hands the model a ready buy instruction (with a Copy fallback), the paid result returns by ref through free tools, one declared `connectDomains` plus CORS, copy buttons with a fallback, the trust limit, testing WebCrypto in a secure context, ASCII-only views.
+- `use-cases/10`: steps "Keep the secret out of the chat" (in-chat card) and "Make the reveal easy to use" (Copy and Clear buttons).
+
 ## 1.3.1 — 18 October 2026
 
 - Score links now point at Qatom Scorecard (`scorecard.agentkepler.tech/item/{id}`, beta) and its CONTRIBUTING guide (en, es).

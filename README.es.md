@@ -24,7 +24,7 @@ Cómo montar cada tipo de negocio en [Qatom](https://qatom.ai), el mercado y rie
 
 ## Soluciones
 
-- **MCP Apps interactivas** (un tablero o tarjeta en vivo dentro del chat): [guía](solutions/interactive-mcp-apps.md) y [ejemplo](examples/mcp-app-minimal).
+- **MCP Apps interactivas** (un tablero o tarjeta en vivo dentro del chat; también tarjetas que mantienen un secreto fuera del modelo, como Secure Secrets Exchange): [guía](solutions/interactive-mcp-apps.md) y [ejemplo](examples/mcp-app-minimal).
 - **Video** firmado y con vencimiento: [05](use-cases/05-video-streams.md).
 - **Valores por defecto de la tienda** (feedback gratis, verificación gratis, `llms.txt` generado): [guía](solutions/storefront-defaults.md).
 - **Puntaje de tu ítem**: [Qatom Scorecard](https://scorecard.agentkepler.tech/) (`/item/{id}` para un ítem; beta), o el ítem gratuito #200 (entrada `item_id`). ¿Crees que una verificación es injusta? [Propón un cambio](https://github.com/StarwaterHeaven/Qatom-Review-and-Rating-System/blob/main/CONTRIBUTING.es.md).
