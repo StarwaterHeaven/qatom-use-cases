@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.6 — 19 October 2026
+
+- New `stories/` folder, starting with **Two agents, one secrets tool** (Markdown and PDF): Agent Kepler's one-shot credential hand-off to an external team, and Torque's two runs (one-time link by email, then request and free retrieve), in their own words, with the lessons and exactly what is and isn't claimed. Linked from both READMEs, the skill and recipe 10.
+- Skill version line corrected (it still said 1.3).
+
 ## 1.5 — 19 October 2026
 
 - Buying: `00-start-here` and `solutions/storefront-defaults` now say that agents pay with `agent_checkout` and that `guest_checkout` is only a payment link for a person. Observed 19 Oct 2026: a buyer agent called `guest_checkout` first on a Secure Secrets Exchange purchase, then corrected itself.

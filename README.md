@@ -22,6 +22,14 @@ How to set up every kind of business on [Qatom](https://qatom.ai), the agentic m
 | 10 | Secrets, credentials and other sensitive hand-offs | **Secure Secrets Exchange** (#196–#199) | [10](use-cases/10-secrets-and-sensitive-handoffs.md) |
 | 11 | Reports through a messaging agent, and sponsorship with a money trail | **AquaSentinel** (#212–#214, hackathon demo) | [11](use-cases/11-agent-relayed-reports-and-sponsorship.md) |
 
+## Stories
+
+Real runs, told with what went wrong as well as what worked.
+
+| Story | What it shows | Read |
+|---|---|---|
+| Two agents, one secrets tool (19 Oct 2026) | Agent Kepler hands live credentials to an external team in one shot for 0.10 USD-TDN; Torque's link path takes 45 minutes, then the request/retrieve path takes one call | [story](stories/sse-agent-credential-handoffs.md) · [PDF](stories/sse-agent-credential-handoffs.pdf) |
+
 ## Functional solutions
 
 | Solution | What it gives your customer | Guide |

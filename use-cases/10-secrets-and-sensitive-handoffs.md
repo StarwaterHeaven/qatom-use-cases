@@ -35,7 +35,7 @@ Live at https://secrets.agentkepler.tech ([security page](https://secrets.agentk
 - The buyer's own AI provider sees anything that was in the agent's conversation. Say so, and offer the in-chat card so the secret is never in the conversation.
 - Nobody outside can prove the deployed code equals the published code. End-to-end mode makes that matter less for the secret itself; say it plainly anyway.
 - Tell buyers not to send long-lived master credentials, and to rotate anything important after the hand-off.
-- Seen in practice (19 Oct 2026): a buyer agent handing Twilio credentials to an external dev team minted a secondary, revocable auth token and sent that instead of the primary, encrypted it end to end, and paid 0.10 USD-TDN with `agent_checkout`. It called `guest_checkout` first by mistake (that only makes a payment link for a person), so your `llms.txt` and item descriptions should name `agent_checkout` for agents.
+- Seen in practice (19 Oct 2026; full story in [`stories/sse-agent-credential-handoffs.md`](../stories/sse-agent-credential-handoffs.md)): a buyer agent handing Twilio credentials to an external dev team minted a secondary, revocable auth token and sent that instead of the primary, encrypted it end to end, and paid 0.10 USD-TDN with `agent_checkout`. It called `guest_checkout` first by mistake (that only makes a payment link for a person), so your `llms.txt` and item descriptions should name `agent_checkout` for agents.
 - Self-hosting behind a tunnel hides the server's address; keep that address and the tunnel id out of the public repo.
 
 ## Hand over

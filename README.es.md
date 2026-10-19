@@ -22,6 +22,10 @@ Cómo montar cada tipo de negocio en [Qatom](https://qatom.ai), el mercado y rie
 | 10 | Secretos, credenciales y otras entregas sensibles | Secure Secrets Exchange (#196–#199) |
 | 11 | Reportes por un agente de mensajería, y patrocinio con rastro del dinero | AquaSentinel (#212–#214, demo de hackathon) |
 
+## Historias
+
+- **Dos agentes, una herramienta de secretos** (19 oct 2026): Agent Kepler entrega credenciales reales a un equipo externo en un solo paso por 0.10 USD-TDN; a Torque el enlace le cuesta 45 minutos, y la solicitud con recuperación gratuita, una sola llamada. [Historia (en inglés)](stories/sse-agent-credential-handoffs.md) · [PDF](stories/sse-agent-credential-handoffs.pdf)
+
 ## Soluciones
 
 - **MCP Apps interactivas** (un tablero o tarjeta en vivo dentro del chat; también tarjetas que mantienen un secreto fuera del modelo, como Secure Secrets Exchange): [guía](solutions/interactive-mcp-apps.md) y [ejemplo](examples/mcp-app-minimal).
