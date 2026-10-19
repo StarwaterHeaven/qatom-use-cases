@@ -16,7 +16,7 @@ A search, check, preview or status call that helps an agent decide before it pay
 
 ## 3. `llms.txt`, generated
 
-A Markdown read-me at your site root written for language models: who you are, what's free, prices, how to call (master MCP, `catalog_search`, `agent_checkout`), worked examples, the catalog table, input schemas, every error with its next step.
+A Markdown read-me at your site root written for language models: who you are, what's free, prices, how to call (master MCP, `catalog_search`, `agent_checkout`; say plainly that agents pay with `agent_checkout`, because buyer agents sometimes reach for `guest_checkout` first), worked examples, the catalog table, input schemas, every error with its next step.
 
 Generate it, never hand-write it:
 

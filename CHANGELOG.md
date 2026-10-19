@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.5 — 19 October 2026
+
+- Buying: `00-start-here` and `solutions/storefront-defaults` now say that agents pay with `agent_checkout` and that `guest_checkout` is only a payment link for a person. Observed 19 Oct 2026: a buyer agent called `guest_checkout` first on a Secure Secrets Exchange purchase, then corrected itself.
+- `use-cases/10`: a "seen in practice" line from that hand-off (secondary revocable token, end-to-end, `agent_checkout`).
+
 ## 1.4 — 18 October 2026
 
 - `solutions/interactive-mcp-apps`: second live reference, the Secure Secrets Exchange in-chat app (`sse-mcp.agentkepler.tech/mcp`), and a new section "Keeping input away from the model": the human types into the view, the view encrypts, `ui/message` hands the model a ready buy instruction (with a Copy fallback), the paid result returns by ref through free tools, one declared `connectDomains` plus CORS, copy buttons with a fallback, the trust limit, testing WebCrypto in a secure context, ASCII-only views.

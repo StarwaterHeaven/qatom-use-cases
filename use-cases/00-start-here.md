@@ -7,7 +7,7 @@ Do these once. Every recipe in this repo assumes them.
 1. **Connect the Qatom master MCP.** In Claude: Settings > Connectors > Add custom connector, URL `https://mcp.m.todaq.net/mcp`, sign in. Grok: grok.com/connectors > Custom, same URL. Any other MCP client: add it as a remote MCP server. Sign-in is OAuth in your client's own connector flow.
 2. **Check the agent's wallet.** Ask: *"Check my Qatom agent wallet."* (`agent_wallet_info`). Signing in gives you a primary twin (your wallet, MFA-gated) and an agent twin (the agent's wallet).
 3. **Fund it a little.** `fund_primary_wallet` gives you a card top-up page; `transfer_to_agent` moves an amount from your primary to the agent twin. The agent can never spend more than its twin holds, and never touches your primary wallet or your card.
-4. **Find and buy.** *"Search the Qatom catalog for weather."* (`catalog_search`), then *"Buy item 80 for Lima."* (`agent_checkout`). Your agent asks you before paying. Free items cost 0.000.
+4. **Find and buy.** *"Search the Qatom catalog for weather."* (`catalog_search`), then *"Buy item 80 for Lima."* (`agent_checkout`, which pays from the agent twin; `guest_checkout` is only for sending a person a payment link). Your agent asks you before paying. Free items cost 0.000.
 
 ## As a seller
 
