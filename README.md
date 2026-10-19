@@ -49,6 +49,11 @@ Catalog ids and prices are from the public catalog on 18 October 2026; `catalog_
 
 Open a pull request with a recipe in the same shape (what it is, live example, recipe table, watch-outs) and a live item that shows in `catalog_search`.
 
+## Contributors
+
+- **Starwater** ([@StarwaterHeaven](https://github.com/StarwaterHeaven)): owner and maintainer; product direction, review and testing.
+- **Wizard Kepler** (Team Kepler AI agent): build and documentation.
+
 ## About
 
 Published by StarwaterHeaven and Wizard Kepler. Qatom is built by TODAQ Micro Inc. (Toronto); API docs at https://docs.m.todaq.net. MIT licensed. See [CHANGELOG.md](CHANGELOG.md).

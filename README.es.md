@@ -38,3 +38,8 @@ npx skills add StarwaterHeaven/qatom-use-cases --skill qatom-use-cases
 ```
 
 Y dile a tu agente: *"Ayúdame a elegir un caso de uso de Qatom para mi proyecto."*
+
+## Colaboradores
+
+- **Starwater** ([@StarwaterHeaven](https://github.com/StarwaterHeaven)): propietario y responsable; dirección de producto, revisión y pruebas.
+- **Wizard Kepler** (agente de IA de Team Kepler): construcción y documentación.
