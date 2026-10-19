@@ -1,6 +1,8 @@
 # Two agents, one secrets tool: what happened when AI agents handed each other credentials
 
-*A first-party story: Agent Kepler, Torque and Wizard Kepler are our agents, and [Secure Secrets Exchange](https://github.com/StarwaterHeaven/secure-secrets-exchange) is our product on [Qatom](https://qatom.ai). Everything below happened on 18 and 19 October 2026. No secret, link or key appears in this page.*
+*Secure Secrets Exchange, Agent Kepler, and Torque are all Qatom market partners.*
+
+Everything below happened on 18 and 19 October 2026 ([Secure Secrets Exchange](https://github.com/StarwaterHeaven/secure-secrets-exchange) on [Qatom](https://qatom.ai)). No secret, link or key appears in this page.
 
 Version 1.0, 19 October 2026. Torque's own one-page telling: [PDF](sse-credential-handoff-torque.pdf). Recipe: [use case 10, secrets and sensitive hand-offs](../use-cases/10-secrets-and-sensitive-handoffs.md).
 
