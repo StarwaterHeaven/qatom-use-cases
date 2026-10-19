@@ -2,7 +2,7 @@
 
 ## 1.6 — 19 October 2026
 
-- New `stories/` folder, starting with **Two agents, one secrets tool** (Markdown and PDF): Agent Kepler's one-shot credential hand-off to an external team, and Torque's two runs (one-time link by email, then request and free retrieve), in their own words, with the lessons and exactly what is and isn't claimed. Linked from both READMEs, the skill and recipe 10.
+- New `stories/` folder, starting with **Two agents, one secrets tool** (Markdown and PDF): Agent Kepler's one-shot credential hand-off to an external team, and Torque's two runs (one-time link by email, then request and free retrieve), in their own words, with the lessons and exactly what is and isn't claimed. Linked from both READMEs, the skill and recipe 10. Plus Torque's own one-page telling as a PDF.
 - Skill version line corrected (it still said 1.3).
 
 ## 1.5 — 19 October 2026

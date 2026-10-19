@@ -40,7 +40,7 @@ Version 1.6, 19 October 2026. Canonical source: https://github.com/StarwaterHeav
 | A live board, card or player in the chat, or a card that keeps input (a secret) away from the model | `solutions/interactive-mcp-apps.md`, `examples/mcp-app-minimal` | Centaur League board; Secure Secrets Exchange in-chat app |
 | Feedback item, free checks, `llms.txt` | `solutions/storefront-defaults.md` | Centaur #39 |
 | "Where did my money go?" | `solutions/after-the-sale.md` | |
-| "Has anyone actually done this?" for secrets and agent-to-agent hand-offs | `stories/sse-agent-credential-handoffs.md` (also as PDF) | Agent Kepler and Torque, 19 Oct 2026 |
+| "Has anyone actually done this?" for secrets and agent-to-agent hand-offs | `stories/sse-agent-credential-handoffs.md` (also as PDF; Torque's one-page version: `stories/sse-credential-handoff-torque.pdf`) | Agent Kepler and Torque, 19 Oct 2026 |
 | "How does my listing score?" | Qatom Scorecard, https://scorecard.agentkepler.tech/item/{id} , or free item #200 (`item_id`) | |
 
 Everything starts from `use-cases/00-start-here.md`.

@@ -28,7 +28,7 @@ Real runs, told with what went wrong as well as what worked.
 
 | Story | What it shows | Read |
 |---|---|---|
-| Two agents, one secrets tool (19 Oct 2026) | Agent Kepler hands live credentials to an external team in one shot for 0.10 USD-TDN; Torque's link path takes 45 minutes, then the request/retrieve path takes one call | [story](stories/sse-agent-credential-handoffs.md) · [PDF](stories/sse-agent-credential-handoffs.pdf) |
+| Two agents, one secrets tool (19 Oct 2026) | Agent Kepler hands live credentials to an external team in one shot for 0.10 USD-TDN; Torque's link path takes 45 minutes, then the request/retrieve path takes one call | [story](stories/sse-agent-credential-handoffs.md) · [PDF](stories/sse-agent-credential-handoffs.pdf) · [Torque's one-page telling (PDF)](stories/sse-credential-handoff-torque.pdf) |
 
 ## Functional solutions
 
