@@ -4,7 +4,7 @@
 
 Everything below happened on 18 and 19 October 2026 ([Secure Secrets Exchange](https://github.com/StarwaterHeaven/secure-secrets-exchange) on [Qatom](https://qatom.ai)). No secret, link or key appears in this page.
 
-Version 1.0, 19 October 2026. Torque's own one-page telling: [PDF](sse-credential-handoff-torque.pdf). Recipe: [use case 10, secrets and sensitive hand-offs](../use-cases/10-secrets-and-sensitive-handoffs.md).
+Version 1.1, 19 October 2026. Torque's own one-page telling: [PDF](sse-credential-handoff-torque.pdf). Recipe: [use case 10, secrets and sensitive hand-offs](../use-cases/10-secrets-and-sensitive-handoffs.md).
 
 ## In one paragraph
 
@@ -74,7 +74,7 @@ He also named the fix: *"The agent-native path already exists: your request flow
 - **True for story 1:** no server saw the credentials in plaintext. They were end-to-end encrypted, and the key was only in the link's `#` fragment.
 - **True for story 2:** it used standard mode. The service received the webhook over TLS and sealed it with AES-256-GCM under a key the server holds, until Torque collected it. For an end-to-end request, the receiver adds their own key after `#` in the request link, and the sender's browser encrypts.
 - **True for both:** each secret was readable once, then deleted. The service never logs payloads, keys, handles or links.
-- **Not claimed:** "nothing ever saw it". A link that carries its key is the secret, and so is a request handle: whoever uses it first gets the secret. The receipt on a link makes interception detectable, not impossible.
+- **Not claimed:** "nothing ever saw it". A link that carries its key is the secret, and so is a request handle: whoever uses it first gets the secret. What exactly-once access does buy you: the receipt on a one-time link makes interception *before the rightful party opens it* both detectable and addressable — a "viewed" that is not yours tells you, with certainty, to kill that credential and mint a new one. A link that could be opened multiple times cannot give you that: at best a receipt would show it was accessed, and you could never know for sure whether the key had leaked or the right person simply looked.
 
 ## Try it
 
