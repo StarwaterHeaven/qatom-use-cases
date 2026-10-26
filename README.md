@@ -21,6 +21,7 @@ How to set up every kind of business on [Qatom](https://qatom.ai), the agentic m
 | 09 | Programmatic buyers, orchestration platforms, seller agents | Gracia AI, Northern Village, Pirate Kepler | [09](use-cases/09-buyers-platforms-and-seller-agents.md) |
 | 10 | Secrets, credentials and other sensitive hand-offs | **Secure Secrets Exchange** (#196–#199) | [10](use-cases/10-secrets-and-sensitive-handoffs.md) |
 | 11 | Reports through a messaging agent, and sponsorship with a money trail | **AquaSentinel** (#212–#214, hackathon demo) | [11](use-cases/11-agent-relayed-reports-and-sponsorship.md) |
+| 12 | Giving by QR: donations and cause-linked gifts on a product or poster | **Donate-on-Pack**, Glacier Fresh x WaterAid Canada (#219–#222, live demo) | [12](use-cases/12-giving-by-qr.md) |
 
 ## Stories
 
@@ -51,7 +52,7 @@ Real runs, told with what went wrong as well as what worked.
 | Run the store after launch | [Qatom Console skill](https://github.com/StarwaterHeaven/qatom-console-skill) |
 | Play or build a game | [Centaur League kit](https://github.com/StarwaterHeaven/centaur-league) |
 
-Catalog ids and prices are from the public catalog on 18 October 2026; `catalog_search` on the master MCP has the current list.
+Catalog ids and prices are from the public catalog on 26 October 2026; `catalog_search` on the master MCP has the current list.
 
 ## Add your use case
 

@@ -21,6 +21,7 @@ Cómo montar cada tipo de negocio en [Qatom](https://qatom.ai), el mercado y rie
 | 09 | Compradores programáticos, plataformas, agentes vendedores | Gracia AI, Northern Village |
 | 10 | Secretos, credenciales y otras entregas sensibles | Secure Secrets Exchange (#196–#199) |
 | 11 | Reportes por un agente de mensajería, y patrocinio con rastro del dinero | AquaSentinel (#212–#214, demo de hackathon) |
+| 12 | Donaciones por QR: regalos para una causa desde un producto o un cartel | Donate-on-Pack, Glacier Fresh x WaterAid Canada (#219–#222, demo en vivo) |
 
 ## Historias
 

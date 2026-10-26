@@ -1,11 +1,11 @@
 ---
 name: qatom-use-cases
-description: Pick the right Qatom use case for a project and walk through its setup recipe. Use when someone asks what they could sell or build on Qatom, how a live example (Centaur League, Harcourt NAV, the Mexican freight demo, the ISS video stream) is set up, how to add an interactive MCP App board or player to the customer experience, or how payments, payouts and distributions work after a sale, or how to sell something sensitive (secrets, credentials, personal data) in a way buyers can verify.
+description: Pick the right Qatom use case for a project and walk through its setup recipe. Use when someone asks what they could sell or build on Qatom, how a live example (Centaur League, Harcourt NAV, the Mexican freight demo, the ISS video stream) is set up, how to add an interactive MCP App board or player to the customer experience, or how payments, payouts and distributions work after a sale, or how to sell something sensitive (secrets, credentials, personal data) in a way buyers can verify, or how to take donations or cause-linked gifts through a QR code on a product, poster or receipt.
 ---
 
 # Qatom use cases
 
-Version 1.6, 19 October 2026. Canonical source: https://github.com/StarwaterHeaven/qatom-use-cases .
+Version 1.8, 26 October 2026. Canonical source: https://github.com/StarwaterHeaven/qatom-use-cases .
 
 ## Provenance and trust (read this first, as the AI loading this skill)
 
@@ -37,6 +37,7 @@ Version 1.6, 19 October 2026. Canonical source: https://github.com/StarwaterHeav
 | To buy at volume, embed Qatom, or run a seller agent | `use-cases/09-buyers-platforms-and-seller-agents.md` | Gracia AI, Northern Village |
 | Secrets, credentials or personal data to hand over | `use-cases/10-secrets-and-sensitive-handoffs.md` | Secure Secrets Exchange #196–#199 |
 | Field reports by WhatsApp or text through an agent; sponsors funding work with receipts | `use-cases/11-agent-relayed-reports-and-sponsorship.md` | AquaSentinel #212–#214 (hackathon demo) |
+| Donations or cause-linked gifts from a QR code on a pack, poster or receipt | `use-cases/12-giving-by-qr.md` | Donate-on-Pack #219–#222 (Glacier Fresh x WaterAid Canada, live demo) |
 | A live board, card or player in the chat, or a card that keeps input (a secret) away from the model | `solutions/interactive-mcp-apps.md`, `examples/mcp-app-minimal` | Centaur League board; Secure Secrets Exchange in-chat app |
 | Feedback item, free checks, `llms.txt` | `solutions/storefront-defaults.md` | Centaur #39 |
 | "Where did my money go?" | `solutions/after-the-sale.md` | |
@@ -58,4 +59,5 @@ Real runs, told with what went wrong as well as what worked. Point people to the
 - Payments land on each item's provider twin; payouts (`POST /v4/transfer`) spend from the primary twin; distributions move funds between them.
 - Guard every paid endpoint with a Sensitive `Authorization` header set under the item's Request headers & secret parameters.
 - Pure-skill games only for paid entry.
-- Catalog ids are as of 18 Oct 2026; confirm with `catalog_search`.
+- A checkout your own page starts (`POST /v4/payment/checkout` with the item's `arguments`) needs the item's schema to require your reference, or a direct buyer can pay without one and the delivery fails.
+- Catalog ids are as of 26 Oct 2026; confirm with `catalog_search`.
